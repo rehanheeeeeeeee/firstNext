@@ -1,0 +1,44 @@
+Next js helps in server side rendering of react components 
+
+And whatever components are created within the pages folder
+will have a  route created for them by next 
+
+But for the index.js file it doesnt create a route with its name 
+but instead of that it links that component to home route of the web app.
+
+For 404.js the component inside of it is going to rendered whenever 
+a user tries to access a route which does not exist.
+
+By using the next js our react components are rendered through the server
+before itself which means they are not rendered as the user accesses them in there 
+browser but are rendered before hand itself.
+
+So if we want to make API request we wanna make it when the component 
+is rendered by the server itself which is before the user accesses them
+
+So this will help the data being rendered before hand itself in the 
+component rather than the API call being made when the user accesses the
+component.
+
+Which kinda reduces the user expierence as the component will be empty
+for afew seconds 
+
+And this is was useEffect does it makes API calls when the component
+by the browser for making API calls within the component in the server
+we have to use a function in next
+
+Dynamic Routes:
+
+Now in our case we wanna create a dynamic route or a wildcard 
+
+like /noobs/:noodid
+
+here in this route the noobid can be anything 
+
+we can put anything inside noobid and the component will be rendered.
+
+In order to do such a thing we would need to create a file with its name
+in brackets and what this is going to do is tell next js that the component
+inside of here can be rendered when ever they try to access anything
+like in our case it can be noob/1 , noob/fnwbfjksjbf , /noob/332u
+anything then also this specific component will be rendered.

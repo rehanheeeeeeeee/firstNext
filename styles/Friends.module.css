@@ -1,0 +1,41 @@
+.friends {
+  padding: 10px 10vw;
+  background-color: #f5f5f5;
+  flex: 1;
+  overflow-x: hidden;
+}
+.friends h2 {
+  font-weight: 600;
+  font-family: Poppins;
+}
+
+.friend {
+  background-color: white;
+  margin: 10px 0;
+  border-radius: 3px;
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  padding: 15px;
+  height: 100%;
+}
+
+.friend h3 {
+  font-family: Poppins;
+  font-weight: 500;
+}
+
+.friend h3::before {
+  content: "·";
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.friend:hover {
+  transition: all 200ms ease-in;
+  border-left: 5px solid #4979ff;
+}

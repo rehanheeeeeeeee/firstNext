@@ -1,0 +1,12 @@
+.notFound {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.notFound h2 {
+  font-weight: 500;
+}
+.notFound p {
+  margin: 10px 0;
+}
